@@ -1,4 +1,5 @@
 build_dynamic_defaults:
+
   centos:
     build_packages:
       # cleaned group Development Tools
@@ -18,6 +19,27 @@ build_dynamic_defaults:
       - git
       - mercurial
       - subversion
+
+  redhat:
+    build_packages:
+      # cleaned group Development Tools
+      - autoconf
+      - automake
+      - binutils
+      - bison
+      - flex
+      - gcc
+      - gcc-c++
+      - gettext
+      - libtool
+      - make
+      - patch
+      - pkgconfig
+      # other packages
+      - git
+      - mercurial
+      - subversion
+
   linux:
     build_packages:
       - build-essential
@@ -26,5 +48,6 @@ build_dynamic_defaults:
       - mercurial
       - pkg-config
       - subversion
+
   macosx:
     build_packages: []
